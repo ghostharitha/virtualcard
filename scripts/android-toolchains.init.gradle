@@ -1,0 +1,8 @@
+gradle.beforeSettings { settings ->
+    settings.pluginManagement.resolutionStrategy.eachPlugin {
+        // React Native 0.83 requests a resolver that references a field removed in Gradle 9.
+        if (requested.id.id == 'org.gradle.toolchains.foojay-resolver-convention') {
+            useVersion('1.0.0')
+        }
+    }
+}

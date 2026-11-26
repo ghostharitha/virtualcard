@@ -1,0 +1,26 @@
+{
+  "name": "tapfolio",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "server": "node --env-file-if-exists=.env server/index.mjs",
+    "test": "node server/index.test.mjs"
+  },
+  "dependencies": {
+    "expo": "~55.0.0",
+    "expo-build-properties": "~55.0.18",
+    "expo-crypto": "~55.0.19",
+    "expo-image-picker": "~55.0.24",
+    "expo-modules-core": "~55.0.27",
+    "expo-secure-store": "~55.0.18",
+    "react": "19.2.0",
+    "react-native": "0.83.10",
+    "react-native-safe-area-context": "~5.6.2",
+    "react-native-qrcode-svg": "^6.3.15",
+    "react-native-svg": "15.15.3"
+  }
+}
